@@ -7,6 +7,7 @@ h1{
     align-items: center;
     justify-content: center; 
     position: relative;
+    border: 2px solid #333;
 }
 
 #slider-img {
