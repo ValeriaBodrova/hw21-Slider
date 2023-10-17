@@ -17,35 +17,27 @@ const prevButton = document.getElementById('prev');
 prevButton.style.display = 'none'; 
 
 nextButton.addEventListener('click', function() {
-    imgElement.style.opacity = '0'; 
-    
-    currentImageIndex++;
-    if (currentImageIndex >= images.length - 1) {
-        nextButton.style.display = 'none';
-    }
-    
-    prevButton.style.display = '';
-    imgElement.src = images[currentImageIndex];
-
-    imgElement.onload = function() { 
-        imgElement.style.opacity = '1'; 
-    }
-   
+    imgElement.style.opacity = '0';
+    setTimeout(() => {
+        currentImageIndex++;
+        if (currentImageIndex >= images.length - 1) {
+            nextButton.style.display = 'none';
+        }
+        prevButton.style.display = '';
+        imgElement.src = images[currentImageIndex];
+        imgElement.style.opacity = '1';
+    }, 500); 
 });
 
 prevButton.addEventListener('click', function() {
-
-    imgElement.style.opacity = '0'; 
-
-    currentImageIndex--;
-    if (currentImageIndex <= 0) {
-        prevButton.style.display = 'none';
-    }
-    
-    nextButton.style.display = '';
-    imgElement.src = images[currentImageIndex];
-
-    imgElement.onload = function() { 
+    imgElement.style.opacity = '0';
+    setTimeout(() => {
+        currentImageIndex--;
+        if (currentImageIndex <= 0) {
+            prevButton.style.display = 'none';
+        }
+        nextButton.style.display = '';
+        imgElement.src = images[currentImageIndex];
         imgElement.style.opacity = '1';
-    }
+    }, 500); 
 });
