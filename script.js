@@ -26,11 +26,18 @@ nextButton.addEventListener('click', function() {
 });
 
 prevButton.addEventListener('click', function() {
-    currentImageIndex--;
     if (currentImageIndex <= 0) {
-        prevButton.style.display = 'none';
+        currentImageIndex = images.length - 1; 
+        nextButton.style.display = '';
+    } else {
+        currentImageIndex--;
     }
-    
-    nextButton.style.display = '';
+
+    if (currentImageIndex === 0) {
+        prevButton.style.display = 'none';
+        prevButton.style.display = ''; 
+    }
+
     imgElement.src = images[currentImageIndex];
 });
+
