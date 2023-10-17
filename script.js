@@ -12,7 +12,6 @@ const images = [
 
 let currentImageIndex = 0;
 const imgElement = document.getElementById('slider-img');
-imgElement.style.transition = 'opacity 2s';
 const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('prev');
 prevButton.style.display = 'none'; 

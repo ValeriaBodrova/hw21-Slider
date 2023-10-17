@@ -12,7 +12,8 @@ h1{
     width: 300px;
     max-height: 500px;
     display: block;
-   
+    transition: opacity 2s ease 0.5s;
+    opacity: 0;
 }
 
 #prev,
