@@ -16,6 +16,7 @@ h1{
     max-height: 500px;
     display: block;
     transition: opacity 0.5s;
+    margin: 10px;
 }
 
 #prev,
