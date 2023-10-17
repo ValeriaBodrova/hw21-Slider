@@ -17,6 +17,8 @@ const prevButton = document.getElementById('prev');
 prevButton.style.display = 'none'; 
 
 nextButton.addEventListener('click', function() {
+    imgElement.style.opacity = '0'; 
+    
     currentImageIndex++;
     if (currentImageIndex >= images.length - 1) {
         nextButton.style.display = 'none';
@@ -24,9 +26,17 @@ nextButton.addEventListener('click', function() {
     
     prevButton.style.display = '';
     imgElement.src = images[currentImageIndex];
+
+    imgElement.onload = function() { 
+        imgElement.style.opacity = '1'; 
+    }
+   
 });
 
 prevButton.addEventListener('click', function() {
+
+    imgElement.style.opacity = '0'; 
+
     currentImageIndex--;
     if (currentImageIndex <= 0) {
         prevButton.style.display = 'none';
@@ -34,4 +44,8 @@ prevButton.addEventListener('click', function() {
     
     nextButton.style.display = '';
     imgElement.src = images[currentImageIndex];
+
+    imgElement.onload = function() { 
+        imgElement.style.opacity = '1';
+    }
 });
