@@ -5,9 +5,25 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center; 
+    position: relative;
 }
 
 #slider-img {
     width: 300px;
     max-height: 500px;
+    display: block;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+#prev {
+    left: 10px;
+}
+#next {
+    right: 10px;
 }
