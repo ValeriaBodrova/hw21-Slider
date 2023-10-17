@@ -14,6 +14,7 @@ let currentImageIndex = 0;
 const imgElement = document.getElementById('slider-img');
 const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('prev');
+prevButton.style.display = 'none'; 
 
 nextButton.addEventListener('click', function() {
     currentImageIndex++;
@@ -26,18 +27,11 @@ nextButton.addEventListener('click', function() {
 });
 
 prevButton.addEventListener('click', function() {
+    currentImageIndex--;
     if (currentImageIndex <= 0) {
-        currentImageIndex = images.length - 1; 
-        nextButton.style.display = '';
-    } else {
-        currentImageIndex--;
-    }
-
-    if (currentImageIndex === 0) {
         prevButton.style.display = 'none';
-        prevButton.style.display = ''; 
     }
-
+    
+    nextButton.style.display = '';
     imgElement.src = images[currentImageIndex];
 });
-
