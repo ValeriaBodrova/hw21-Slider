@@ -79,4 +79,12 @@ h1{
     .slider-container {
         width: 90%; 
     }
+    #prev,
+    #next {
+        background: transparent;
+    }
+    #prev:hover,
+    #next:hover {
+    background-color:transparent;
+}
 }
