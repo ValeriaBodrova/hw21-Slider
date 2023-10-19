@@ -6,6 +6,7 @@ h1{
     display: flex;
     align-items: center;
     height: 400px;
+    width: 70%;
     justify-content: center; 
     position: relative;
     border: 2px solid #333;
