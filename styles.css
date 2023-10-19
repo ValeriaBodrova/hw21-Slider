@@ -53,3 +53,16 @@ h1{
 #next {
     right: 10px;
 }
+
+
+@media (max-width: 768px) { 
+    .slider-container {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slider-container {
+        width: 90%; 
+    }
+}
