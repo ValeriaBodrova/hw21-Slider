@@ -5,6 +5,7 @@ h1{
 .slider {
     display: flex;
     align-items: center;
+    height: 400px;
     justify-content: center; 
     position: relative;
     border: 2px solid #333;
