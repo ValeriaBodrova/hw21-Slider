@@ -51,6 +51,12 @@ h1{
     box-shadow: 0 0 8px 3px #333;
 }
 
+.transitioning #next,
+.transitioning #prev {
+    box-shadow: none;
+}
+
+
 #prev {
     left: 10px;
 }
