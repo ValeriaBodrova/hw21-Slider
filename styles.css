@@ -63,6 +63,10 @@ h1{
     #next {
         background: transparent;
     }
+    #prev:hover,
+    #next:hover {
+    background-color:transparent;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
