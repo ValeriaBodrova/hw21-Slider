@@ -16,7 +16,6 @@ const prevButton = document.getElementById('prev');
 prevButton.style.display = 'none'; 
 
 nextButton.addEventListener('click', function() {
-    imgElement.classList.add('transitioning');
     imgElement.style.opacity = '0';
     setTimeout(() => {
         currentImageIndex++;
@@ -25,7 +24,6 @@ nextButton.addEventListener('click', function() {
         }
         prevButton.style.display = '';
         imgElement.src = images[currentImageIndex];
-        imgElement.classList.remove('transitioning');
         imgElement.style.opacity = '1';
     }, 500); 
 });
