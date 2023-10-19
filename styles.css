@@ -34,7 +34,7 @@ h1{
     background-color: #200D12;
     color: #fff;
     border: none;
-    box-shadow: 0 0 10px 4px #333; 
+    box-shadow: 0 0 10px 4px #200D12; 
     transition: box-shadow 0.3s ease-in-out;
     font-size: 18px;
     cursor: pointer;
@@ -47,8 +47,8 @@ h1{
 
 #prev:hover,
 #next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 8px 3px #333;
+    background-color: #6B473E;
+    box-shadow: 0 0 8px 3px #200D12;
 }
 
 
